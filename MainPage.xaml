@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DetectaRostros3000.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <VerticalStackLayout Padding="30"
+                         Spacing="20"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        
+        <Label Text="DetectaRostros3000"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#333" />
+
+        
+        <Frame WidthRequest="220"
+               HeightRequest="220"
+               BorderColor="#ccc"
+               CornerRadius="10"
+               HasShadow="True"
+               HorizontalOptions="Center">
+            <Image x:Name="UploadedImage" 
+                   WidthRequest="200" 
+                   HeightRequest="200" 
+                   Aspect="AspectFill" />
+        </Frame>
+
+        
+        <HorizontalStackLayout Spacing="10"
+                               HorizontalOptions="Center">
+            <Button Text="Subir Imagen"
+                    Clicked="OnUploadImageButtonClicked"
+                    WidthRequest="140"
+                    HeightRequest="50"
+                    BackgroundColor="#0078D4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    FontAttributes="Bold" />
+
+            <Button Text="Detectar Rostros"
+                    Clicked="OnDetectFaceButtonClicked"
+                    WidthRequest="140"
+                    HeightRequest="50"
+                    BackgroundColor="#0078D4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    FontAttributes="Bold" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
